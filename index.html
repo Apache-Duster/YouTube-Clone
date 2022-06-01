@@ -1,88 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Youtube</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="./fontawesome-free-6.0.0-beta3-web/css/all.css"
+  />
   <link rel="stylesheet" href="./css/style.css">
-  <link
-  rel="stylesheet"
-  href="./fontawesome-free-5.15.4-web/css/all.css"/>
-</head>
-<body>
-  <header>
-  <nav>
-    <div class="nav1">
-    <i class="fas fa-bars"></i>
-   <img src="./images/youtube2.png">
-  </div>
-  
-  <div class="nav2">
-    <form action="" method="">
-    <input type="text" name= search id="search" placeholder="Search">
-   <span><button><i class="fas fa-search"></i></button></span>
-    <i class="fas fa-microphone"></i>
-    </form>
-  </div>
+    <title>Youtube clone</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+      <div class="nav-start">
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="logo">
+          <img src="./images/youtube-logo.png" alt="" />
+         </div>
+      </div>
+        <form class="search-bar" action="action_page.php">
+            <input type="text" placeholder="Search" name="search" />
+            <button class="search" type="submit"><i class="fa fa-search"></i></button>    
+            <button class="micro" type="submit"><i class="fa fa-microphone"></i></button>
+          </form>
+        <div class="end-nav">
+            <div class="toggle">
+              <!-- <label class="toggle-label"></label> -->
+              <label class="switch">
+                <input type="checkbox" name="agree" />
+                <span class="slider"></span>
+              </label>
+            </div>
+          <button type="submit">
+            <i class="fa fa-video"></i>
+          </button>
+          <button type="submit"><i class="fas fa-th test"></i></button>
+          <button type="submit"><i class="fas fa-bell"></i></button>
+          <img src="./images/avatar.png" alt="avatar"><a href="#"></a></img>
+        </div>
+      </nav>
+      <article class="nasa-image">
+          <ul>
+            <li><a href="www.nasa.gov"><img src="./images/nasa-logo.png" alt="nasa img"><i class="fa fa-nasalogo"></i>www.nasa.gov</a></li>
+              <li><a href=""><i class="fab fa-twitter"></i></a></li>
+              <li><a href=""><i class="fab fa-facebook"></i></a></li>
+              <li><a href=""><i class="fab fa-flickr"></i></a></li>
+              <li><a href=""><i class="fab fa-instagram"></i></a></li>
+          </ul>          
+      </article>
+      <article class="nasa-official">
+        <div class="control-space">
+        <div class="account">
+          <img src="./images/nasa-logo.png" alt="nasa img" >
+          <div class="name-subs">
+            <div class="name">Nasa <div class="verify-h">&#9745<div class="verified">Verified</div></div></div>
+            <div class="subscribers">9.81M subscribed</div>
+         </div>
+        </div>
+          <button class="subs-button" type="submit" value="subscribe">Subscribe</button>
+      </div>
+      </article>
+      <article class="menu-bar">
+       <ul>
+           <li><a href="#">HOME</a></li>
+           <li><a href="#">VIDEOS</a></li>
+           <li><a href="#">PLAYLIST</a></li>
+           <li><a href="#">COMMUNITY</a></li>
+           <li><a href="#">CHANNELS</a></li>
+           <li><a href="#">ABOUT</a></li>
+           <li><button class="fas fa-search"></button>
+            <!-- hidden and shown onClick -->
+            <!-- <input type="text" placeholder="Search" name="search" /> -->
+        </li>
+       </ul>
+      </article>
+    </header>
+    <section class="aside-bar">
+        <div class="home">
+          <ul>
+            <li><a href=""><i class="fas fa-home"></i>Home</a></li>
+            <li><a href=""><i class="far fa-compass"></i>Explore</a></li>
+            <li><a href=""><i class="fab fa-youtube"></i>Subscriptions</a></li>
+          </ul>
+        </div>
+        <hr>
+        <div class="library">
+            <ul>
+              <li><a href=""><i class="fab fa-youtube"></i>Library</a></li>
+              <li><a href=""><i class="fas fa-history"></i>History</a></li>
+              <li><a href=""><i class="fab fa-youtube"></i>Your videos</a></li>
+              <li><a href=""><i class="far fa-clock"></i>Watch later</a></li>
+              <li><a href=""><i class="fas fa-heart"></i>Favorites</a></li>
+            </ul>
+          </div>
+          <hr>
+          <div class="subscriptions">
+            <ul>
+              <li><a href=""><i class="fas fa-heart"></i>Spinnin Records</a></li>
+              <li><a href=""><i class="fas fa-balance-scale"></i>Nice Guys</a></li>
+              <li><a href=""><i class="fab fa-affiliatetheme"></i>ARTE Concert</a></li>
+              <li><a href=""><i class="fab fa-cuttlefish"></i>Lofi Girl</a></li>
+              <li><a href=""><i class="fab fa-font-awesome-flag"></i>Future Classic</a></li>
 
-  <div class="nav3">
-    <div><i class="fas fa-video"></i></div>
-    <div><i class="fas fa-th"></i></div>
-    <div><i class="far fa-bell"></i></div>
-    <!-- <img src="./images/paris2.jpg"> -->
-  </div>
-   </nav>
-  </header>
-
-  <div class="container"></div>
-
-
-  <article>
-  <div class="left-menu">
-  <div><i class="fas fa-home"></i>Home</div>
-  <div><i class="fas fa-fire"></i>Trending</div>
-  <div><i class="fas fa-play"></i>Subscriptions</div>
-  
-  <div><i class="fas fa-photo-video"></i>Library</div>
-  <div><i class="far fa-undo"></i>History</div>
-  <div><i class="fab fa-youtube"></i>Your videos</div>
-  <div><i class="fas fa-clock"></i>Watch later</div>
-  <div><i class="fas fa-bars"></i>Favorites</div>
-  <div><i class="fas fa-angle-down"></i>Show more</div>
-
-  <div><i class="fas fa-plus-circle"></i>Explore channels</div>
-  <div><i class="fas fa-play-circle"></i>Youtube Premium</div>
-  <div><i class="fas fa-film"></i>Movies and series</div>
-  <div><i class="fas fa-gamepad"></i>Video game</div>
-  <div><i class="fas fa-rss"></i>Direct</div>
-  <div><i class="far fa-lightbulb"></i>Learning</div>
-  <div><i class="far fa-question-circle"></i>Help</div>
-  <div><i class="fas fa-cog"></i>Setting</div>
-
-</div>
-</article>
-
-<article class="container">
-<h1>Photo</h1>
-<!-- <img src="./images/paris2.jpg"> -->
-<ul>
-  <li><a href="#">Beginning</a></li>
-  <li><a href="#">Videos</a></li>
-  <li><a href="#">Lists</a></li>
-  <li><a href="#">Community</a></li>
-  <li><a href="#">Store</a></li>
-  <li><a href="#">Channels</a></li>
-  <li><a href="#">Information</a></li>
-<span><li><i class="fas fa-search"></i></li></span>
-</ul>
-</article>
-
-</body>
+            </ul>
+          </div>
+          <hr>
+          <div class="more-for-youtube">
+            <ul>
+              <li><a href=""><i class="fab fa-youtube-square"></i>Youtube Premium</a></li>
+              <li><a href=""><i class="fas fa-film"></i>Movie & shows</a></li>
+              <li><a href=""><i class="fas fa-film"></i>Gaming</a></li>
+              <li><a href=""><i class="fas fa-map-pin"></i>Live</a></li>
+              <li><a href=""><i class="far fa-lightbulb"></i>Learning</a></li>
+              <li><a href=""><i class="fas fa-trophy"></i>Sport</a></li>
+            </ul>
+          </div>
+          <hr>
+          <div class="Settings">
+            <ul>
+              <li><a href=""><i class="fas fa-trophy"></i>Settings</a></li>
+              <li><a href=""><i class="fab fa-font-awesome-flag"></i>Report history</a></li>
+              <li><a href=""><i class="far fa-question-circle"></i>Help</a></li>
+              <li><a href=""><i class="fas fa-exclamation-circle"></i>Send feedback</a></li>
+            </ul>
+          </div>
+          <hr>
+          <footer>
+            <p>
+            <a href=""> About</a>
+                <a href="">Press</a>
+                <a href="">Copyright</a>
+                <a href="">Contact</a>
+                <a href="">Creator</a>
+                <a href="">Advertise</a>
+                <a href="">Developers</a>
+                <a href="">Impressum</a>
+                <a href="">NetzDG</a>
+                <a href="">Transparenzbericht</a>
+                <a href="">NetzDG</a>
+                <a href="">complaints</a>
+              <br>
+              <a class="terms" href="">Terms</a>
+              <a href="">Privacy</a>
+              <a href="">Policy & Safety</a>
+              <a href="">How YouTube works</a>
+              <a href="">Test new features</a>
+            </p>
+             <div> © 2022 Maykal Tenev study project</div>
+          </footer>
+      </section>
+    <main>
+      <article class="uploads-title">
+        <div class="uploads">
+            <div>Uploads<i class="fas fa-chevron-down"></i></div>
+            <div><i class="fas fa-sort-amount-up"></i>Sort by</div>
+        </div>
+        <div class="first-row">
+          <div class="video">
+              <img src="./images/videos/video-1.webp" alt="nasa-photo" width="207" height="107">
+              <div class="img-text"><a href="#">Black History Month: NASA Honors the Stars of Our Past</a></div>
+            <div class="info-video">
+              <span class="views">33K views</span>
+                <span class="dot">.</span>
+                <span class="upload-time">1 day ago</span>
+            </div>
+          </div>
+          <div class="video">
+            <img src="./images/videos/video-2.webp" alt="nasa-photo" width="207" height="107">
+            <div class="img-text"><a href="#">A Milestone for an American Astronaut on the Space...</a></div>
+          <div class="info-video">
+            <span class="views">24K views</span>
+              <span class="dot">.</span>
+              <span class="upload-time">1 day ago</span>
+          </div>
+          </div>
+          <div class="video">
+            <img src="./images/videos/video-3.webp" alt="nasa-photo" width="207" height="107">
+            <div class="img-text"><a href="#">Science Launching on Northrop Grumman CRS-17...</a></div>
+          <div class="info-video">
+            <span class="views">32K views</span>
+              <span class="dot">.</span>
+              <span class="upload-time">3 day ago</span>
+          </div>
+          </div>
+          <div class="video">
+            <img src="./images/videos/video-4.webp" alt="nasa-photo" width="207" height="107">
+            <div class="img-text"><a href="#">Black History Month: NASA Honors the Stars of Our Past</a></div>
+          <div class="info-video">
+            <span class="views">39K views</span>
+              <span class="dot">.</span>
+              <span class="upload-time">4 days ago</span>
+          </div>
+          </div>
+          <div class="video">
+            <img src="./images/videos/video-5.webp" alt="nasa-photo" width="207" height="107">
+            <div class="img-text"><a href="#">The Webb Space Telescope Reaches Its New Home on...</a></div>
+          <div class="info-video">
+            <span class="views">114K views</span>
+              <span class="dot">.</span>
+              <span class="upload-time">8 days ago</span>
+          </div>
+          </div>
+          <div class="video">
+            <img src="./images/videos/video-6.webp" alt="nasa-photo" width="207" height="107">
+            <div class="img-text"><a href="#">The Webb Space Telescope Reaches Its New Home on...</a></div>
+          <div class="info-video">
+            <span class="views">65K views</span>
+              <span class="dot">.</span>
+              <span class="upload-time">9 days ago</span>
+            </div>
+          </div>
+        </div>
+        <div class="second-row">
+        <div class="video">
+            <img src="./images/videos/video-7.webp" alt="nasa-photo" width="207" height="107">
+            <div class="img-text"><a href="#">NASA Remembers Fallen Heroes </a></div>
+          <div class="info-video">
+            <span class="views">63K views</span>
+              <span class="dot">.</span>
+              <span class="upload-time">10 days ago</span>
+          </div>
+        </div>
+        <div class="video">
+          <img src="./images/videos/video-8.webp" alt="nasa-photo" width="207" height="107">
+          <div class="img-text"><a href="#">NASA Science Live: What’s Next for the James Webb...</a></div>
+        <div class="info-video">
+          <span class="views">471K views</span>
+            <span class="dot">.</span>
+            <span class="upload-time">12 days ago</span>
+        </div>
+        </div>
+        <div class="video">
+          <img src="./images/videos/video-9.webp" alt="nasa-photo" width="207" height="107">
+          <div class="img-text"><a href="#">A Commercial Mission Returning Cargo from the...</a></div>
+        <div class="info-video">
+          <span class="views">118K views</span>
+            <span class="dot">.</span>
+            <span class="upload-time">2 weeks ago</span>
+        </div>
+        </div>
+        <div class="video">
+          <img src="./images/videos/video-10.webp" alt="nasa-photo" width="207" height="107">
+          <div class="img-text"><a href="#">A Major Milestone for the James Webb Space...</a></div>
+        <div class="info-video">
+          <span class="views">234K views</span>
+            <span class="dot">.</span>
+            <span class="upload-time">3 weeks ago</span>
+        </div>
+        </div>
+        <div class="video">
+          <img src="./images/videos/video-11.webp" alt="nasa-photo" width="207" height="107">
+          <div class="img-text"><a href="#">ISS 2030: NASA Extends Operations of the...</a></div>
+        <div class="info-video">
+          <span class="views">232K views</span>
+            <span class="dot">.</span>
+            <span class="upload-time">3 weeks ago</span>
+        </div>
+        </div>
+        <div class="video">
+          <img src="./images/videos/video-12.webp" alt="nasa-photo" width="207" height="107">
+          <div class="img-text"><a href="#">News Update on James Webb Space Telescope's Full...</a></div>
+        <div class="info-video">
+          <span class="views">615K views</span>
+            <span class="dot">.</span>
+            <span class="upload-time">4 weeks ago</span>
+          </div>
+        </div>
+    </div>
+    <div class="third-row">
+      <div class="video">
+          <img src="./images/videos/video-13.webp" alt="nasa-photo" width="207" height="107">
+          <div class="img-text"><a href="#">James Webb Space Telescope: Primary Mirror...</a></div>
+        <div class="info-video">
+          <span class="views">1M views</span>
+            <span class="dot">.</span>
+            <span class="upload-time">4 weeks ago</span>
+        </div>
+      </div>
+      <div class="video">
+        <img src="./images/videos/video-14.webp" alt="nasa-photo" width="207" height="107">
+        <div class="img-text"><a href="#">A Week of Deployments for the James Webb Space...</a></div>
+      <div class="info-video">
+        <span class="views">214K views</span>
+          <span class="dot">.</span>
+          <span class="upload-time">4 weeks ago</span>
+      </div>
+      </div>
+      <div class="video">
+        <img src="./images/videos/video-15.webp" alt="nasa-photo" width="207" height="107">
+        <div class="img-text"><a href="#">James Webb Space Telescope: Secondary Mirror...</a></div>
+      <div class="info-video">
+        <span class="views">1.1M views</span>
+          <span class="dot">.</span>
+          <span class="upload-time">1 month ago</span>
+      </div>
+      </div>
+      <div class="video">
+        <img src="./images/videos/video-16.webp" alt="nasa-photo" width="207" height="107">
+        <div class="img-text"><a href="#">James Webb Space Telescope: Sunshield</a></div>
+      <div class="info-video">
+        <span class="views">2.1M views</span>
+          <span class="dot">.</span>
+          <span class="upload-time">1 month ago</span>
+      </div>
+      </div>
+      <div class="video">
+        <img src="./images/videos/video-17.webp" alt="nasa-photo" width="207" height="107">
+        <div class="img-text"><a href="#">We Asked a NASA Expert</a></div>
+      <div class="info-video">
+        <span class="views">58K views</span>
+          <span class="dot">.</span>
+          <span class="upload-time">1 month ago</span>
+      </div>
+      </div>
+      <div class="video">
+        <img src="./images/videos/video-18.webp" alt="nasa-photo" width="207" height="107">
+        <div class="img-text"><a href="#">NASA 2022: The Future is Now</a></div>
+      <div class="info-video">
+        <span class="views">281K views</span>
+          <span class="dot">.</span>
+          <span class="upload-time">1 month ago</span>
+        </div>
+      </div>
+    </div>
+    <div class="fourth-row">
+      <div class="video">
+          <img src="./images/videos/video-19.webp" alt="nasa-photo" width="207" height="107">
+          <div class="img-text"><a href="#">Are There Rainbows on Mars? We Asked a NASA...</a></div>
+        <div class="info-video">
+          <span class="views">73K views</span>
+            <span class="dot">.</span>
+            <span class="upload-time">1 month ago</span>
+        </div>
+      </div>
+      <div class="video">
+        <img src="./images/videos/video-20.webp" alt="nasa-photo" width="207" height="107">
+        <div class="img-text"><a href="#">James Webb Space Telescope Launch — Official...</a></div>
+      <div class="info-video">
+        <span class="views">9.2M views</span>
+          <span class="dot">.</span>
+          <span class="upload-time">1 month ago</span>
+      </div>
+      </div>
+      <div class="video">
+        <img src="./images/videos/video-21.webp" alt="nasa-photo" width="207" height="107">
+        <div class="img-text"><a href="#">Why Can You See the Moon During the Day?</a></div>
+      <div class="info-video">
+        <span class="views">115K views</span>
+          <span class="dot">.</span>
+          <span class="upload-time">1 month ago</span>
+      </div>
+      </div>
+      <div class="video">
+        <img src="./images/videos/video-22.webp" alt="nasa-photo" width="207" height="107">
+        <div class="img-text"><a href="#">We Did Some Amazing Things This Year</a></div>
+      <div class="info-video">
+        <span class="views">91K views</span>
+          <span class="dot">.</span>
+          <span class="upload-time">1 month ago</span>
+      </div>
+      </div>
+      <div class="video">
+        <img src="./images/videos/video-23.webp" alt="nasa-photo" width="207" height="107">
+        <div class="img-text"><a href="#">NASA's James Webb Space Telescope -Official Mission</a></div>
+      <div class="info-video">
+        <span class="views">481K views</span>
+          <span class="dot">.</span>
+          <span class="upload-time">1 month ago</span>
+      </div>
+      </div>
+      <div class="video">
+        <img src="./images/videos/video-24.webp" alt="nasa-photo" width="207" height="107">
+        <div class="img-text"><a href="#">Watch SpaceX Launch Science and Supplies to the...</a></div>
+      <div class="info-video">
+        <span class="views">50K views</span>
+          <span class="dot">.</span>
+          <span class="upload-time">1 month ago</span>
+        </div>
+      </div>
+    </div>
+    <div class="fifth-row">
+      <div class="video">
+          <img src="./images/videos/video-25.webp" alt="nasa-photo" width="207" height="107">
+          <div class="img-text"><a href="#">Season’s Greetings from NASA...</a></div>
+        <div class="info-video">
+          <span class="views">67K views</span>
+            <span class="dot">.</span>
+            <span class="upload-time">1 month ago</span>
+        </div>
+      </div>
+      <div class="video">
+        <img src="./images/videos/video-26.webp" alt="nasa-photo" width="207" height="107">
+        <div class="img-text"><a href="#">#EZScience: Taking Light Apart with the James Webb</a></div>
+      <div class="info-video">
+        <span class="views">77K views</span>
+          <span class="dot">.</span>
+          <span class="upload-time">1 month ago</span>
+      </div>
+      </div>
+      <div class="video">
+        <img src="./images/videos/video-27.webp" alt="nasa-photo" width="207" height="107">
+        <div class="img-text"><a href="#">Is There Water on Mars? We Asked a NASA Scientist</a></div>
+      <div class="info-video">
+        <span class="views">65K views</span>
+          <span class="dot">.</span>
+          <span class="upload-time">1 month ago</span>
+      </div>
+      </div>
+      <div class="video">
+        <img src="./images/videos/video-28.webp" alt="nasa-photo" width="207" height="107">
+        <div class="img-text"><a href="#">A New Class of Astronaut Candidates on This Week</a></div>
+      <div class="info-video">
+        <span class="views">59K views</span>
+          <span class="dot">.</span>
+          <span class="upload-time">1 month ago</span>
+      </div>
+      </div>
+      <div class="video">
+        <img src="./images/videos/video-29.webp" alt="nasa-photo" width="207" height="107">
+        <div class="img-text"><a href="#">Watch NASA's IXPE Observatory Launch Into...</a></div>
+      <div class="info-video">
+        <span class="views">201K views</span>
+          <span class="dot">.</span>
+          <span class="upload-time">1 month ago</span>
+      </div>
+      </div>
+      <div class="video">
+        <img src="./images/videos/video-30.webp" alt="nasa-photo" width="207" height="107">
+        <div class="img-text">Are There Oceans on Other Worlds? We Asked a NASA...<a href="#"></a></div>
+      <div class="info-video">
+        <span class="views">35K views</span>
+          <span class="dot">.</span>
+          <span class="upload-time">1 month ago</span>
+        </div>
+      </div>
+    </div>
+      </article>
+    </main>
+  <script>
+      let hover = true;
+      document.querySelector(".verify-h").addEventListener("mouseover", () => {
+        hover = !hover; 
+        if (hover) {
+          //do something only if clocked is true
+          document.querySelector(".verified").style.cssText =
+            "display: block; width: 4em; height: 1rem;position: absolute;  bottom: 100%; background-color: gray;border: 1px #7F7F7F solid; color: white;opacity: 0.6; text-transform: capitalize; font-size: 0.9rem; text-align: center;";
+        } else {
+          //do something only if clocked is false
+          document.querySelector(".verified").style.cssText = "display: none;";
+        }
+      });
+  </script>
+  </body>
 </html>
-
-
-
 
 
 
